@@ -1,53 +1,20 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
 import EventDetail from "../components/eventDetail.component";
-import OrderSummary from "../components/orderSummary.component";
 
-interface Event {
-  id: string;
-  category: string;
-  date: string;
-  img: string;
-  title: string;
-  description: string;
-  location: string;
-  ticketPrice: number;
-}
-
-const EventDetailPage: React.FC = () => {
+const EventDetailPage = () => {
   const { id } = useParams<{ id: string }>();
-  const eventId = id || "";
 
-  const [orderDetails, setOrderDetails] = useState<{
-    event: Event | null;
-    quantity: number;
-    total: number;
-  }>({
-    event: null,
-    quantity: 1,
-    total: 0,
-  });
-
-  const handlePurchase = (event: Event, quantity: number) => {
-    setOrderDetails({ event, quantity, total: quantity * event.ticketPrice });
-  };
-
-  const handleBackToSelection = () => {
-    setOrderDetails({ event: null, quantity: 1, total: 0 });
-  };
+  // Aseguramos que id siempre sea un string
+  const eventId = id ?? "";
 
   return (
-    <section className="event-details bg-light" style={{ padding: "20px" }}>
-      <div className="container">
+    <section
+      className="event-details-eventodetails bg-light"
+      style={{ padding: "0px" }}
+    >
+      <div className="container bg-light">
         <h1>Detalles del Evento</h1>
-        {orderDetails.event ? (
-          <OrderSummary
-            details={orderDetails}
-            onBackToSelection={handleBackToSelection}
-          />
-        ) : (
-          <EventDetail eventId={eventId} onPurchase={handlePurchase} />
-        )}
+        <EventDetail eventId={eventId} />
       </div>
     </section>
   );
