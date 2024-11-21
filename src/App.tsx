@@ -9,7 +9,7 @@ import EventDetailPage from "./pages/EventDetail.page";
 function App() {
   return (
     <div className="d-flex flex-column min-vh-100">
-      <BrowserRouter>
+      <BrowserRouter basename="/eventix">
         <Header />
         {/* Contenido principal de la página */}
         <main
