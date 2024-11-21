@@ -1,0 +1,484 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown-menu {
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Alineación consistente */
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary.show,
+.btn-secondary:focus {
+  /* Incluye focus para accesibilidad */
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.btn-secondary img {
+  filter: none;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px;
+}
+
+.navbar-profile {
+  margin-left: auto;
+}
+
+.navbar-toggler {
+  z-index: 1000;
+}
+
+/* Ajustes específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden; /* Evitar desbordamiento */
+  }
+
+  .dropdown-menu {
+    text-align: center;
+  }
+}
+
+/* Estilos sobre nosotros */
+.acerca-de {
+  padding: 5rem 0;
+  background-color: #f8f9fa; /* Color de fondo suave */
+}
+
+.acerca-de h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.acerca-de p {
+  line-height: 1.6;
+  color: #666;
+}
+
+.acerca-de ul {
+  list-style: none;
+  padding: 0;
+}
+
+.acerca-de li {
+  margin-bottom: 1rem;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .img-fluid {
+    width: 100%;
+  }
+}
+/* CTA */
+.cta {
+  background-color: #f2f2f2;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.cta p {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="email"]:focus {
+  border-bottom: 2px solid #007bff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buscador*/
+.mobile-search {
+  display: none;
+}
+
+/* Mostrar la sección solo en dispositivos móviles (ajusta el ancho según tus necesidades) */
+@media (max-width: 768px) {
+  .mobile-search {
+    display: block;
+    text-align: center; /* Centra el formulario */
+    margin: 20px auto; /* Agrega márgenes para espaciarlo */
+  }
+}
+
+/* Estilos adicionales para el formulario y los botones (personaliza a tu gusto) */
+.mobile-search .form-control {
+  padding: 10px;
+}
+/* HERO */
+.hero {
+  background-color: #f0f0f0;
+  min-height: 500px;
+}
+
+.hero .container {
+  height: 100%;
+}
+
+.hero-image {
+  border-radius: 10px;
+}
+/* Filtros */
+.filters {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.form-select {
+  border-radius: 5px;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+/* Detalle eventos */
+.event-details {
+  padding: 50px 0;
+}
+
+.event-details-eventodetails {
+  padding: 10px 0;
+}
+
+.event-details img {
+  border-radius: 10px;
+}
+
+.event-details h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.event-details p {
+  line-height: 1.5;
+}
+/* Estilos para la pagina de eventos */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+/* Los siguientes estilos son para Event detail para la pagina */
+
+/* Imagen con tamaño fijo */
+.img-fixed {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  /* Se unificó la propiedad border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  /* Se unificó la propiedad box-shadow */
+}
+
+/* Diseño de la tarjeta del resumen del pedido */
+.order-summary-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.8)
+  );
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary-card h3 {
+  margin-bottom: 1.5rem;
+  color: #28a745;
+  /* Se unificó el color */
+  font-weight: bold;
+}
+
+.list-group-item {
+  background-color: #f9f9f9;
+  /* Se unificó el color de fondo */
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.list-group-item strong {
+  color: #495057;
+  /* Se unificó el color */
+}
+
+/* Botones estilizados */
+.btn-primary,
+.btn-secondary,
+.btn-success {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-gradient {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+
+/* Resumen de Pedido Styling */
+#order-summary .card {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+#order-summary h3 {
+  font-weight: 600;
+}
+
+.order-details ul {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.purchase-summary h5,
+.order-details h5 {
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.purchase-summary p {
+  font-size: 1.1rem;
+}
+
+#order-summary .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+#order-summary .btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+/* Hover and Active States */
+#order-summary .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+#order-summary .btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* Formulario de Registro/Login */
+#login-form .card {
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+#login-form h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#login-form .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+#login-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+#login-form a {
+  text-decoration: none;
+}
+
+/* Confirmación de Compra */
+#purchase-confirmation {
+  background-color: #f8f9fa;
+  /* Gris claro para el fondo */
+}
+
+#purchase-confirmation .card {
+  background-color: #fff;
+  /* Blanco para la tarjeta */
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  /* Borde gris para simular un borde de entrada */
+  position: relative;
+  overflow: hidden;
+}
+
+#purchase-confirmation .card h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #0066cc;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#purchase-confirmation .card p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+#purchase-confirmation .card h5 {
+  font-weight: bold;
+  color: #333;
+}
+
+#purchase-confirmation .btn {
+  font-size: 1.1em;
+  background-color: #0066cc;
+  /* Azul de fondo */
+  border-color: #0056b3;
+  transition: background-color 0.3s ease;
+}
+
+#purchase-confirmation .btn:hover {
+  background-color: #0056b3;
+  /* Cambiar color en hover */
+  border-color: #004085;
+}
+
+#purchase-confirmation .card .mt-4 {
+  margin-top: 20px;
+}
+
+#purchase-confirmation .card .mb-3 {
+  margin-bottom: 20px;
+}
+
+#purchase-confirmation .card canvas {
+  border: 2px solid #eee;
+  /* Borde sutil alrededor del QR */
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  .img-fixed {
+    height: 300px;
+  }
+
+  .order-summary-card {
+    padding: 1rem;
+  }
+}
