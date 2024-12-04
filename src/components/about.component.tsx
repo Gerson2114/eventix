@@ -12,13 +12,13 @@ const About = () => {
           </div>
           <div className="col-lg-6">
             <h2>Your Ally for Unforgettable Events</h2>
-            <p>
+            <p style={{ textAlign: "justify" }}>
               At Eventix, we believe that every event is an opportunity to
               create unforgettable memories. That’s why we offer the perfect
               platform to find tickets for your favorite events and help
               organizers sell their tickets easily and securely.
             </p>
-            <p>
+            <p style={{ textAlign: "justify" }}>
               Our mission is to connect people with the experiences they are
               passionate about, from concerts and festivals to sports and
               cultural events.

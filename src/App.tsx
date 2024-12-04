@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./pages/home.page";
 import Event from "./pages/event.page";
 import EventDetailPage from "./pages/EventDetail.page";
+import Dashboard from "./pages/dashboard.page";
 
 function App() {
   return (
@@ -12,16 +13,17 @@ function App() {
       <BrowserRouter basename="/eventix">
         <Header />
         {/* Contenido principal de la página */}
-        <main
+        {/* <main
           className="container mt-4 flex-grow-1"
           style={{ marginBottom: "50px" }}
-        >
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/events" element={<Event />} />
-            <Route path="/event/:id" element={<EventDetailPage />} />
-          </Routes>
-        </main>
+        > */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/events" element={<Event />} />
+          <Route path="/event/:id" element={<EventDetailPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+        {/* </main> */}
       </BrowserRouter>
       <Footer />
     </div>

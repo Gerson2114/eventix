@@ -52,7 +52,7 @@ function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src="https://img.freepik.com/psd-gratis/plantilla-banner-concepto-karaoke_23-2148646291.jpg?t=st=1731341576~exp=1731345176~hmac=a44bc5207625abf4d977da1b5211699f5571d00e0bb724d7e5142dda30c709f1&w=2000"
+            src="https://img.freepik.com/psd-gratis/nuevo-concepto-banner-normal_23-2148581557.jpg?t=st=1732221514~exp=1732225114~hmac=a014524685fc8ac37586e1af49e3fa4e02780b27e2eced270de269d3b267f3cc&w=2000"
             className="d-block w-100"
             alt="Evento 3"
           />
